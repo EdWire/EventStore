@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using EventStore.Common.Utils;
-using EventStore.Core.Exceptions;
+using EventStore.Core.TransactionLog.Exceptions;
 using ILogger = Serilog.ILogger;
 
 namespace EventStore.Core.TransactionLog.Chunks {

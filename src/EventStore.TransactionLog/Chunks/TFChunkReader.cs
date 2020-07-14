@@ -1,8 +1,8 @@
 using System;
 using System.Threading;
 using EventStore.Common.Utils;
-using EventStore.Core.Exceptions;
 using EventStore.Core.TransactionLog.Checkpoint;
+using EventStore.Core.TransactionLog.Exceptions;
 
 namespace EventStore.Core.TransactionLog.Chunks {
 	public class TFChunkReader : ITransactionFileReader {

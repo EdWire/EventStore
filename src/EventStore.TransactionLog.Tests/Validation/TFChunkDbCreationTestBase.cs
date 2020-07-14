@@ -3,7 +3,7 @@ using System.IO;
 using EventStore.Core.TransactionLog.Chunks;
 using EventStore.Core.TransactionLog.Chunks.TFChunk;
 
-namespace EventStore.Core.Tests.TransactionLog.Validation {
+namespace EventStore.Core.TransactionLog.Tests.Validation {
 	public static class DbUtil {
 		public static void CreateSingleChunk(TFChunkDbConfig config, int chunkNum, string filename,
 			int? actualDataSize = null, bool isScavenged = false, byte[] contents = null) {

@@ -1,9 +1,10 @@
 using System;
 using System.IO;
 using EventStore.Core.TransactionLog.FileNamingStrategy;
+using EventStore.Core.TransactionLog.Tests.Helpers;
 using NUnit.Framework;
 
-namespace EventStore.Core.Tests.TransactionLog {
+namespace EventStore.Core.TransactionLog.Tests {
 	[TestFixture]
 	public class versioned_pattern_filenaming_strategy : SpecificationWithDirectory {
 		[Test]

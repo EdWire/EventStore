@@ -1,15 +1,13 @@
 using System;
 using System.Threading.Tasks;
-using EventStore.Core.Data;
-using EventStore.Core.Tests.TransactionLog;
-using EventStore.Core.TransactionLog;
-using EventStore.Core.TransactionLog.Checkpoint;
 using EventStore.Core.TransactionLog.Chunks;
-using EventStore.Core.TransactionLog.FileNamingStrategy;
+using EventStore.Core.TransactionLog.Data;
 using EventStore.Core.TransactionLog.LogRecords;
+using EventStore.Core.TransactionLog.TestHelpers;
+using EventStore.Core.TransactionLog.Tests.Helpers;
 using NUnit.Framework;
 
-namespace EventStore.Core.Tests.TransactionLog {
+namespace EventStore.Core.TransactionLog.Tests {
 	[TestFixture]
 	public class when_sequentially_reading_db_with_one_chunk : SpecificationWithDirectoryPerTestFixture {
 		private const int RecordsCount = 3;

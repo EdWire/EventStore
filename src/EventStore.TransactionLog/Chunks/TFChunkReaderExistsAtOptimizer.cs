@@ -1,5 +1,5 @@
 using System;
-using EventStore.Core.DataStructures;
+using EventStore.Core.TransactionLog.DataStructures;
 using ILogger = Serilog.ILogger;
 
 namespace EventStore.Core.TransactionLog.Chunks {

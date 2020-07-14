@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace EventStore.Core.Index.Hashes {
+namespace EventStore.Core.TransactionLog.Hashes {
 	public class Murmur2Unsafe : IHasher {
 		private const uint Seed = 0xc58f1a7b;
 

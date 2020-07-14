@@ -1,5 +1,5 @@
 using System;
-using EventStore.Core.DataStructures;
+using EventStore.Core.TransactionLog.DataStructures;
 
 namespace EventStore.Core.TransactionLog {
 	public interface ITransactionFileReader {

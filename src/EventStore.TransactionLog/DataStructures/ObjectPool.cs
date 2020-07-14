@@ -1,9 +1,9 @@
 ﻿using System;
+using System.Collections.Concurrent;
 using System.Threading;
 using EventStore.Common.Utils;
-using System.Collections.Concurrent;
 
-namespace EventStore.Core.DataStructures {
+namespace EventStore.Core.TransactionLog.DataStructures {
 	public class ObjectPoolDisposingException : Exception {
 		public ObjectPoolDisposingException(string poolName)
 			: this(poolName, null) {

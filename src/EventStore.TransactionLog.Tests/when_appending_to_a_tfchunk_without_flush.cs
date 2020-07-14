@@ -1,10 +1,11 @@
 using System;
-using EventStore.Core.TransactionLog;
 using EventStore.Core.TransactionLog.Chunks.TFChunk;
 using EventStore.Core.TransactionLog.LogRecords;
+using EventStore.Core.TransactionLog.TestHelpers;
+using EventStore.Core.TransactionLog.Tests.Helpers;
 using NUnit.Framework;
 
-namespace EventStore.Core.Tests.TransactionLog {
+namespace EventStore.Core.TransactionLog.Tests {
 	[TestFixture]
 	public class when_appending_to_a_tfchunk_without_flush : SpecificationWithFilePerTestFixture {
 		private TFChunk _chunk;

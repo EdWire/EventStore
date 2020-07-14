@@ -2,7 +2,7 @@ using System;
 using EventStore.Core.TransactionLog.LogRecords;
 using NUnit.Framework;
 
-namespace EventStore.Core.Tests.TransactionLog {
+namespace EventStore.Core.TransactionLog.Tests {
 	[TestFixture]
 	public class commit_log_record_should {
 		[Test]

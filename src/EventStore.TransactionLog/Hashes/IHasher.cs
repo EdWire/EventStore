@@ -1,4 +1,4 @@
-namespace EventStore.Core.Index.Hashes {
+namespace EventStore.Core.TransactionLog.Hashes {
 	public interface IHasher {
 		uint Hash(string s);
 		uint Hash(byte[] data);

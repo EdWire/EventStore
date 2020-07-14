@@ -1,8 +1,8 @@
 using System;
 using EventStore.Common.Utils;
-using EventStore.Core.Index.Hashes;
+using EventStore.Core.TransactionLog.Hashes;
 
-namespace EventStore.Core.DataStructures {
+namespace EventStore.Core.TransactionLog.DataStructures {
 	public class BloomFilter {
 		/*
 		    Bloom filter implementation based on the following paper by Adam Kirsch and Michael Mitzenmacher:

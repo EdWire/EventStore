@@ -2,7 +2,7 @@ using System;
 using System.Diagnostics;
 using System.Threading.Tasks;
 
-namespace EventStore.Core.Tests {
+namespace EventStore.Core.TransactionLog.Tests.Helpers {
 	public static class TaskExtensions {
 		public static Task WithTimeout(this Task task, TimeSpan timeout)
 			=> task.WithTimeout(Convert.ToInt32(timeout.TotalMilliseconds));

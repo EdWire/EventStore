@@ -2,7 +2,7 @@ using System;
 using EventStore.Core.TransactionLog.Chunks;
 using NUnit.Framework;
 
-namespace EventStore.Core.Tests.TransactionLog {
+namespace EventStore.Core.TransactionLog.Tests {
 	[TestFixture]
 	public class when_creating_chunked_transaction_file_database {
 		[Test]

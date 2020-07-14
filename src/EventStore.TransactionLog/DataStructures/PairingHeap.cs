@@ -1,11 +1,10 @@
 ﻿#define USE_POOL
 
 using System;
-using System.Collections.Concurrent;
 using System.Collections.Generic;
 using EventStore.Common.Utils;
 
-namespace EventStore.Core.DataStructures {
+namespace EventStore.Core.TransactionLog.DataStructures {
 	public class PairingHeap<T> {
 #if USE_POOL
 		private readonly ObjectPool<HeapNode> _nodePool = new ObjectPool<HeapNode>(100, () => new HeapNode());

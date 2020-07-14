@@ -1,7 +1,6 @@
 using System;
-using System.Runtime.Serialization;
 
-namespace EventStore.Core.Exceptions {
+namespace EventStore.Core.TransactionLog.Exceptions {
 	public class FileBeingDeletedException : Exception {
 		public FileBeingDeletedException() {
 		}

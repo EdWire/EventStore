@@ -1,9 +1,11 @@
 using System;
 using EventStore.Core.TransactionLog.Chunks.TFChunk;
 using EventStore.Core.TransactionLog.LogRecords;
+using EventStore.Core.TransactionLog.TestHelpers;
+using EventStore.Core.TransactionLog.Tests.Helpers;
 using NUnit.Framework;
 
-namespace EventStore.Core.Tests.TransactionLog {
+namespace EventStore.Core.TransactionLog.Tests {
 	[TestFixture]
 	public class when_reading_logical_bytes_bulk_from_a_chunk : SpecificationWithDirectory {
 		[Test]

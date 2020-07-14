@@ -8,13 +8,17 @@ using System.Threading;
 using System.Threading.Tasks;
 using EventStore.Common.Utils;
 using EventStore.Core.Data;
-using EventStore.Core.DataStructures;
 using EventStore.Core.Exceptions;
 using EventStore.Core.Index;
 using EventStore.Core.Services;
 using EventStore.Core.Services.Storage.ReaderIndex;
 using EventStore.Core.TransactionLog.Chunks.TFChunk;
+using EventStore.Core.TransactionLog.Data;
+using EventStore.Core.TransactionLog.DataStructures;
+using EventStore.Core.TransactionLog.Exceptions;
 using EventStore.Core.TransactionLog.LogRecords;
+using EventStore.Core.TransactionLog.Services;
+using EventStore.Core.TransactionLog.Util;
 using ILogger = Serilog.ILogger;
 
 namespace EventStore.Core.TransactionLog.Chunks {

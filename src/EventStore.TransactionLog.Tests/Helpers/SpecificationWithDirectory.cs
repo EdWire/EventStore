@@ -3,7 +3,7 @@ using System.IO;
 using System.Threading.Tasks;
 using NUnit.Framework;
 
-namespace EventStore.Core.Tests {
+namespace EventStore.Core.TransactionLog.Tests.Helpers {
 	public class SpecificationWithDirectory {
 		protected string PathName;
 

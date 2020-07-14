@@ -1,6 +1,6 @@
 using System;
 
-namespace EventStore.Core.Exceptions {
+namespace EventStore.Core.TransactionLog.Exceptions {
 	internal class UnableToReadPastEndOfStreamException : Exception {
 		public UnableToReadPastEndOfStreamException() {
 		}

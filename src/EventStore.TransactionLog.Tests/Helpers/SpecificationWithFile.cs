@@ -2,7 +2,7 @@ using System;
 using System.IO;
 using NUnit.Framework;
 
-namespace EventStore.Core.Tests {
+namespace EventStore.Core.TransactionLog.Tests.Helpers {
 	public class SpecificationWithFile {
 		protected string Filename;
 

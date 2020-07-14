@@ -1,7 +1,9 @@
 using EventStore.Core.TransactionLog.Chunks.TFChunk;
+using EventStore.Core.TransactionLog.TestHelpers;
+using EventStore.Core.TransactionLog.Tests.Helpers;
 using NUnit.Framework;
 
-namespace EventStore.Core.Tests.TransactionLog {
+namespace EventStore.Core.TransactionLog.Tests {
 	[TestFixture]
 	public class when_reading_cached_empty_scavenged_tfchunk : SpecificationWithFilePerTestFixture {
 		private TFChunk _chunk;

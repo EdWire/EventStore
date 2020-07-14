@@ -1,4 +1,4 @@
-namespace EventStore.Core.Data {
+namespace EventStore.Core.TransactionLog.Data {
 	public static class ExpectedVersion {
 		public const long Any = -2;
 

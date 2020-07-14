@@ -1,8 +1,7 @@
 using System;
 using System.IO;
 using EventStore.Common.Utils;
-using EventStore.Core.Exceptions;
-using EventStore.Core.Index;
+using EventStore.Core.TransactionLog.Exceptions;
 
 namespace EventStore.Core.TransactionLog.Chunks {
 	public class ChunkHeader {

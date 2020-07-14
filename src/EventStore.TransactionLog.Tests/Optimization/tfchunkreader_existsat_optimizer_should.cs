@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using EventStore.Core.TransactionLog.Chunks;
 using EventStore.Core.TransactionLog.Chunks.TFChunk;
 using EventStore.Core.TransactionLog.LogRecords;
+using EventStore.Core.TransactionLog.Tests.Helpers;
 using NUnit.Framework;
 
-namespace EventStore.Core.Tests.TransactionLog.Optimization {
+namespace EventStore.Core.TransactionLog.Tests.Optimization {
 	[TestFixture]
 	public class tfchunkreader_existsat_optimizer_should : SpecificationWithDirectoryPerTestFixture {
 		[Test]

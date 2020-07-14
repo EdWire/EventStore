@@ -91,7 +91,7 @@ namespace EventStore.Core.TransactionLog.LogRecords {
 			if (transactionOffset < -1)
 				throw new ArgumentOutOfRangeException("transactionOffset");
 			Ensure.NotNullOrEmpty(eventStreamId, "eventStreamId");
-			if (expectedVersion < Core.Data.ExpectedVersion.Any)
+			if (expectedVersion < TransactionLog.Data.ExpectedVersion.Any)
 				throw new ArgumentOutOfRangeException("expectedVersion");
 
 			Flags = flags;

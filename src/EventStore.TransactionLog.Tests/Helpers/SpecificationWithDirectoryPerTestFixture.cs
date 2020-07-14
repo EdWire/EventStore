@@ -4,7 +4,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using NUnit.Framework;
 
-namespace EventStore.Core.Tests {
+namespace EventStore.Core.TransactionLog.Tests.Helpers {
 	public class SpecificationWithDirectoryPerTestFixture {
 		protected internal string PathName;
 

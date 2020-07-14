@@ -2,11 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using EventStore.Common.Utils;
-using EventStore.Core.Services;
+using EventStore.Core.TransactionLog.Services;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace EventStore.Core.Data {
+namespace EventStore.Core.TransactionLog.Data {
 	public class StreamMetadata {
 		public static readonly StreamMetadata Empty = new StreamMetadata();
 

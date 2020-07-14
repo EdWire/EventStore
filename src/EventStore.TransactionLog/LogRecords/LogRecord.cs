@@ -1,8 +1,8 @@
 using System;
 using System.IO;
 using EventStore.Common.Utils;
-using EventStore.Core.Data;
-using EventStore.Core.Services;
+using EventStore.Core.TransactionLog.Data;
+using EventStore.Core.TransactionLog.Services;
 
 namespace EventStore.Core.TransactionLog.LogRecords {
 	public enum LogRecordType {

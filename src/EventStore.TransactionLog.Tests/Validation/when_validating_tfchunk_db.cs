@@ -1,19 +1,18 @@
 using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using EventStore.Core.Exceptions;
-using EventStore.Core.TransactionLog.Checkpoint;
 using EventStore.Core.TransactionLog.Chunks;
-using EventStore.Core.TransactionLog.FileNamingStrategy;
+using EventStore.Core.TransactionLog.Exceptions;
+using EventStore.Core.TransactionLog.TestHelpers;
+using EventStore.Core.TransactionLog.Tests.Helpers;
 using NUnit.Framework;
 using Serilog;
 using Serilog.Core;
 using Serilog.Events;
 
-namespace EventStore.Core.Tests.TransactionLog.Validation {
+namespace EventStore.Core.TransactionLog.Tests.Validation {
 	[TestFixture]
 	public class when_validating_tfchunk_db : SpecificationWithDirectory {
 		[Test]

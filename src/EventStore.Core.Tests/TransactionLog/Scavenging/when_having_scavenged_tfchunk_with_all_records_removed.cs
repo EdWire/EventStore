@@ -13,8 +13,10 @@ using EventStore.Core.TransactionLog;
 using EventStore.Core.TransactionLog.Checkpoint;
 using EventStore.Core.TransactionLog.Chunks;
 using EventStore.Core.TransactionLog.Chunks.TFChunk;
+using EventStore.Core.TransactionLog.Data;
 using EventStore.Core.TransactionLog.FileNamingStrategy;
 using EventStore.Core.TransactionLog.LogRecords;
+using EventStore.Core.TransactionLog.TestHelpers;
 using NUnit.Framework;
 
 namespace EventStore.Core.Tests.TransactionLog {

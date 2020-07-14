@@ -1,11 +1,10 @@
-using EventStore.Core.Exceptions;
-using EventStore.Core.Tests.TransactionLog;
-using EventStore.Core.TransactionLog.Checkpoint;
 using EventStore.Core.TransactionLog.Chunks;
-using EventStore.Core.TransactionLog.FileNamingStrategy;
+using EventStore.Core.TransactionLog.Exceptions;
+using EventStore.Core.TransactionLog.TestHelpers;
+using EventStore.Core.TransactionLog.Tests.Helpers;
 using NUnit.Framework;
 
-namespace EventStore.Core.Tests.TransactionLog.Validation {
+namespace EventStore.Core.TransactionLog.Tests.Validation {
 	[TestFixture]
 	public class when_validating_tfchunkdb_without_previous_files : SpecificationWithDirectory {
 		[Test]

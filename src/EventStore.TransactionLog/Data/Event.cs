@@ -2,7 +2,7 @@ using System;
 using EventStore.Common.Utils;
 using EventStore.Core.TransactionLog.Chunks;
 
-namespace EventStore.Core.Data {
+namespace EventStore.Core.TransactionLog.Data {
 	public class Event {
 		public readonly Guid EventId;
 		public readonly string EventType;

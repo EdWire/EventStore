@@ -3,7 +3,7 @@ using EventStore.Core.TransactionLog.Chunks;
 using EventStore.Core.TransactionLog.Chunks.TFChunk;
 using EventStore.Core.TransactionLog.FileNamingStrategy;
 
-namespace EventStore.Core.Tests.TransactionLog {
+namespace EventStore.Core.TransactionLog.TestHelpers {
 	public static class TFChunkHelper {
 		public static TFChunkDbConfig CreateDbConfig(string pathName, long writerCheckpointPosition,
 			long chaserCheckpointPosition = 0,

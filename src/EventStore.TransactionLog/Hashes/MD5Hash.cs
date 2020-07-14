@@ -3,7 +3,7 @@ using System.IO;
 using System.Security.Cryptography;
 using EventStore.Common.Utils;
 
-namespace EventStore.Core.Util {
+namespace EventStore.Core.TransactionLog.Hashes {
 	public class MD5Hash {
 		public static byte[] GetHashFor(Stream s) {
 			//when using this, it will calculate from this point to the END of the stream!

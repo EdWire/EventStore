@@ -3,6 +3,7 @@ using System.IO;
 using System.Threading;
 using EventStore.Common.Utils;
 using System.Linq;
+using EventStore.Core.TransactionLog.Util;
 using ILogger = Serilog.ILogger;
 
 namespace EventStore.Core.TransactionLog.Chunks {

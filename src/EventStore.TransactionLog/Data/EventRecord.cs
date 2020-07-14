@@ -1,10 +1,9 @@
 using System;
-using System.Linq;
 using System.Text;
 using EventStore.Common.Utils;
 using EventStore.Core.TransactionLog.LogRecords;
 
-namespace EventStore.Core.Data {
+namespace EventStore.Core.TransactionLog.Data {
 	public class EventRecord : IEquatable<EventRecord> {
 		public bool IsJson {
 			get { return (Flags & PrepareFlags.IsJson) == PrepareFlags.IsJson; }

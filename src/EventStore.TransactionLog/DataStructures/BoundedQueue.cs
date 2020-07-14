@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace EventStore.Core.DataStructures {
+namespace EventStore.Core.TransactionLog.DataStructures {
 	public class BoundedQueue<T> {
 		private readonly int _maxCapacity;
 		private readonly Queue<T> _queue;

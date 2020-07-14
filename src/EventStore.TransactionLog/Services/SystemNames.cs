@@ -1,7 +1,7 @@
 ﻿using System;
 using EventStore.Common.Utils;
 
-namespace EventStore.Core.Services {
+namespace EventStore.Core.TransactionLog.Services {
 	public static class SystemHeaders {
 		public const string ExpectedVersion = "ES-ExpectedVersion";
 		public const string RequireLeader = "ES-RequireLeader";

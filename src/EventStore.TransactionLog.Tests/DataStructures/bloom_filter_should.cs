@@ -1,5 +1,5 @@
 ﻿using System;
-using EventStore.Core.DataStructures;
+using EventStore.Core.TransactionLog.DataStructures;
 using NUnit.Framework;
 
 namespace EventStore.Core.TransactionLog.Tests.DataStructures {

@@ -1,8 +1,9 @@
-using EventStore.Core.Exceptions;
 using EventStore.Core.TransactionLog.Chunks.TFChunk;
+using EventStore.Core.TransactionLog.Exceptions;
+using EventStore.Core.TransactionLog.Tests.Helpers;
 using NUnit.Framework;
 
-namespace EventStore.Core.Tests.TransactionLog {
+namespace EventStore.Core.TransactionLog.Tests {
 	[TestFixture]
 	public class when_opening_tfchunk_from_non_existing_file : SpecificationWithFile {
 		[Test]

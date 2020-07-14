@@ -1,15 +1,14 @@
 ﻿using System;
 using System.Diagnostics;
-using System.IO;
-using EventStore.Common.Utils;
+using EventStore.Core.TransactionLog.Tests.Helpers;
 using EventStore.Native.FileAccess;
 using NUnit.Framework;
 
-namespace EventStore.Core.Tests.TransactionLog {
+namespace EventStore.Core.TransactionLog.Tests {
 	[TestFixture]
-	public class FlushTimeMeter : SpecificationWithFile {
+	public class flush_time_meter : SpecificationWithFile {
 		[Test, Ignore("long running")]
-		public void Test() {
+		public void flush_time_test() {
 			var rnd = new Random();
 			var sw = Stopwatch.StartNew();
 			var gw = Stopwatch.StartNew();

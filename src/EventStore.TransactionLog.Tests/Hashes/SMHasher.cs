@@ -1,5 +1,5 @@
 using System;
-using EventStore.Core.Index.Hashes;
+using EventStore.Core.TransactionLog.Hashes;
 
 namespace EventStore.Core.TransactionLog.Tests.Hashes {
 	/// <summary>

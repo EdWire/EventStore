@@ -1,4 +1,4 @@
-namespace EventStore.Core.Data {
+namespace EventStore.Core.TransactionLog.Data {
 	public class StreamAcl {
 		public readonly string[] ReadRoles;
 		public readonly string[] WriteRoles;

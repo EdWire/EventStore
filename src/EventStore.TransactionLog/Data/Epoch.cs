@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace EventStore.Core.Data {
+namespace EventStore.Core.TransactionLog.Data {
 	public class Epoch {
 		public readonly long EpochPosition;
 		public readonly int EpochNumber;

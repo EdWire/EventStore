@@ -1,7 +1,6 @@
 using System;
 using EventStore.Common.Utils;
-using EventStore.Core.Data;
-using EventStore.Core.Util;
+using EventStore.Core.TransactionLog.Data;
 
 namespace EventStore.Core.TransactionLog.LogRecords {
 	public static class EpochRecordExtensions {

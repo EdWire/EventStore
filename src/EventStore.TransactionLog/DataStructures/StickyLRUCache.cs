@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using EventStore.Common.Utils;
 
-namespace EventStore.Core.DataStructures {
+namespace EventStore.Core.TransactionLog.DataStructures {
 	public class StickyLRUCache<TKey, TValue> : IStickyLRUCache<TKey, TValue> {
 		private class LRUItem {
 			public TKey Key;

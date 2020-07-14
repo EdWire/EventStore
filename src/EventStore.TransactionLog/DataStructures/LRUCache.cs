@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using EventStore.Common.Utils;
 
-namespace EventStore.Core.DataStructures {
+namespace EventStore.Core.TransactionLog.DataStructures {
 	public class LRUCache<TKey, TValue> : ILRUCache<TKey, TValue> {
 		private class LRUItem {
 			public TKey Key;

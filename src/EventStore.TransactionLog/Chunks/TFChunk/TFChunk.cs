@@ -8,10 +8,10 @@ using System.Runtime.InteropServices;
 using System.Security.Cryptography;
 using System.Threading;
 using EventStore.Common.Utils;
-using EventStore.Core.Exceptions;
 using EventStore.Core.TransactionLog.LogRecords;
-using EventStore.Core.Util;
 using System.Collections.Concurrent;
+using EventStore.Core.TransactionLog.Exceptions;
+using EventStore.Core.TransactionLog.Hashes;
 using ILogger = Serilog.ILogger;
 
 

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Security.Cryptography;
-using EventStore.Core.Util;
+using EventStore.Core.TransactionLog.Hashes;
 using NUnit.Framework;
 
 namespace EventStore.Core.TransactionLog.Tests.Hashes {

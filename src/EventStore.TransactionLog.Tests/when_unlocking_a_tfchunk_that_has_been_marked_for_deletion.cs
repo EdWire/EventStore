@@ -1,8 +1,10 @@
 using System.IO;
 using EventStore.Core.TransactionLog.Chunks.TFChunk;
+using EventStore.Core.TransactionLog.TestHelpers;
+using EventStore.Core.TransactionLog.Tests.Helpers;
 using NUnit.Framework;
 
-namespace EventStore.Core.Tests.TransactionLog {
+namespace EventStore.Core.TransactionLog.Tests {
 	[TestFixture]
 	public class when_unlocking_a_tfchunk_that_has_been_marked_for_deletion : SpecificationWithFile {
 		private TFChunk _chunk;

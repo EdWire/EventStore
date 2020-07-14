@@ -1,6 +1,6 @@
 using System;
 
-namespace EventStore.Core.DataStructures {
+namespace EventStore.Core.TransactionLog.DataStructures {
 	public class NoLRUCache<TKey, TValue> : ILRUCache<TKey, TValue> {
 		public void Clear() {
 		}

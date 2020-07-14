@@ -3,11 +3,12 @@ using System.IO;
 using EventStore.Core.TransactionLog.Checkpoint;
 using EventStore.Core.TransactionLog.Chunks;
 using EventStore.Core.TransactionLog.Chunks.TFChunk;
-using EventStore.Core.TransactionLog.FileNamingStrategy;
 using EventStore.Core.TransactionLog.LogRecords;
+using EventStore.Core.TransactionLog.TestHelpers;
+using EventStore.Core.TransactionLog.Tests.Helpers;
 using NUnit.Framework;
 
-namespace EventStore.Core.Tests.TransactionLog {
+namespace EventStore.Core.TransactionLog.Tests {
 	[TestFixture]
 	public class when_chasing_a_chunked_transaction_log : SpecificationWithDirectory {
 		private readonly Guid _correlationId = Guid.NewGuid();
@@ -33,7 +34,7 @@ namespace EventStore.Core.Tests.TransactionLog {
 		[Test]
 		public void try_read_returns_false_when_writer_checksum_is_equal_to_reader_checksum() {
 			var writerchk = new InMemoryCheckpoint();
-			var chaserchk = new InMemoryCheckpoint(Checkpoint.Chaser, 0);
+			var chaserchk = new InMemoryCheckpoint(Checkpoint.Checkpoint.Chaser, 0);
 			var db = new TFChunkDb(TFChunkHelper.CreateDbConfig(PathName, writerchk, chaserchk));
 			db.Open();
 			writerchk.Write(12);
@@ -79,7 +80,7 @@ namespace EventStore.Core.Tests.TransactionLog {
 			}
 
 			var writerchk = new InMemoryCheckpoint(128);
-			var chaserchk = new InMemoryCheckpoint(Checkpoint.Chaser, 0);
+			var chaserchk = new InMemoryCheckpoint(Checkpoint.Checkpoint.Chaser, 0);
 			var db = new TFChunkDb(TFChunkHelper.CreateDbConfig(PathName, writerchk, chaserchk));
 			db.Open();
 
@@ -101,7 +102,7 @@ namespace EventStore.Core.Tests.TransactionLog {
 		[Test]
 		public void try_read_returns_record_when_record_bigger_than_internal_buffer() {
 			var writerchk = new InMemoryCheckpoint(0);
-			var chaserchk = new InMemoryCheckpoint(Checkpoint.Chaser, 0);
+			var chaserchk = new InMemoryCheckpoint(Checkpoint.Checkpoint.Chaser, 0);
 
 			var db = new TFChunkDb(TFChunkHelper.CreateDbConfig(PathName, writerchk, chaserchk));
 			db.Open();
@@ -143,7 +144,7 @@ namespace EventStore.Core.Tests.TransactionLog {
 		[Test]
 		public void try_read_returns_record_when_writerchecksum_equal() {
 			var writerchk = new InMemoryCheckpoint(0);
-			var chaserchk = new InMemoryCheckpoint(Checkpoint.Chaser, 0);
+			var chaserchk = new InMemoryCheckpoint(Checkpoint.Checkpoint.Chaser, 0);
 			var db = new TFChunkDb(TFChunkHelper.CreateDbConfig(PathName, writerchk, chaserchk));
 			db.Open();
 

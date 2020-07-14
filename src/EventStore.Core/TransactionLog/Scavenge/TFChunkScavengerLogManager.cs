@@ -8,6 +8,8 @@ using EventStore.Core.Messages;
 using EventStore.Core.Services;
 using EventStore.Core.Services.Storage;
 using EventStore.Core.Services.UserManagement;
+using EventStore.Core.TransactionLog.Data;
+using EventStore.Core.TransactionLog.Services;
 using ILogger = Serilog.ILogger;
 
 namespace EventStore.Core.TransactionLog.Chunks {

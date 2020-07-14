@@ -1,6 +1,6 @@
 using System;
 
-namespace EventStore.Core.DataStructures {
+namespace EventStore.Core.TransactionLog.DataStructures {
 	public interface ILRUCache<TKey, TValue> {
 		void Clear();
 		bool TryGet(TKey key, out TValue value);

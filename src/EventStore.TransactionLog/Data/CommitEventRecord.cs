@@ -1,4 +1,4 @@
-namespace EventStore.Core.Data {
+namespace EventStore.Core.TransactionLog.Data {
 	public struct CommitEventRecord {
 		public readonly EventRecord Event;
 		public readonly long CommitPosition;
