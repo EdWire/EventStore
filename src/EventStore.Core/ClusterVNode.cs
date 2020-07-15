@@ -36,6 +36,7 @@ using EventStore.Core.Services.PersistentSubscription;
 using EventStore.Core.Services.Histograms;
 using EventStore.Core.Services.PersistentSubscription.ConsumerStrategy;
 using System.Threading.Tasks;
+using EventStore.Common.Settings;
 using EventStore.Core.Authorization;
 using EventStore.Core.Cluster;
 using EventStore.Core.TransactionLog.DataStructures;
