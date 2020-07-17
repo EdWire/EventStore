@@ -291,7 +291,7 @@ namespace EventStore.Core {
 				db.Config.IndexCheckpoint);
 			_readIndex = readIndex;
 			var writer = new TFChunkWriter(db);
-			var epochManager = new EpochManager(_mainQueue,
+			var epochManager = new EpochManager(
 				ESConsts.CachedEpochCount,
 				db.Config.EpochCheckpoint,
 				writer,
